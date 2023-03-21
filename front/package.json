@@ -1,6 +1,7 @@
 {
   "name": "front",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
@@ -12,6 +13,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "mariadb": "^3.1.1",
     "next": "^13.2.4",
     "react": "^18.2.0",
