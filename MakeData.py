@@ -34,7 +34,7 @@ while True:
             last_checked = row[7]
             print(error_count, error_time, working_time, prev_is_working, last_checked)
             if not is_working:
-                if not prev_is_working:  # 연속적인 오류가 아닌 경우에만 error_count를 높임
+                if prev_is_working:  # 연속적인 오류가 아닌 경우에만 error_count를 높임
                     error_count += 1
                 error_time += 15
             else:
